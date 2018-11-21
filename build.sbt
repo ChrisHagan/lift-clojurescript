@@ -1,8 +1,8 @@
-organization := "io.github.petro-rudenko"
+organization := "io.github.ChrisHagan"
 
-name := "play-clojurescript"
+name := "lift-clojurescript"
 
-version := "0.0.2"
+version := "0.0.1"
 
 sbtPlugin := true
 
@@ -14,8 +14,6 @@ libraryDependencies ++= Seq(
   "org.clojure" % "clojure" % "1.6.0",
   "org.clojure" % "clojurescript" % "0.0-2342"
 )
-
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.0")
 
 publishTo := {
   val nexus = "https://oss.sonatype.org/"
@@ -32,7 +30,7 @@ publishArtifact in Test := false
 pomIncludeRepository := { _ => false }
 
 pomExtra := (
-  <url>https://github.com/petro-rudenko/play-clojurescript</url>
+  <url>https://github.com/ChrisHagan/lift-clojurescript</url>
   <licenses>
     <license>
       <name>Eclipse Public License - v1.0</name>
@@ -41,10 +39,14 @@ pomExtra := (
     </license>
   </licenses>
   <scm>
-    <url>git@github.com:petro-rudenko/play-clojurescript.git</url>
-    <connection>scm:git:git@github.com:petro-rudenko/play-clojurescript.git</connection>
+    <url>git@github.com:ChrisHagan/lift-clojurescript.git</url>
+    <connection>scm:git:git@github.com:ChrisHagan/lift-clojurescript.git</connection>
   </scm>
   <developers>
+  <developer>
+  <id>ChrisHagan</id>
+  <name>Chris Hagan</id>
+  </developer>
     <developer>
       <id>petro-rudenko</id>
       <name>Peter Rudenko</name>
