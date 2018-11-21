@@ -1,11 +1,9 @@
-# play-clojurescript - ClojureScript to JavaScript compiler for Play 2.3
+# lift-clojurescript - ClojureScript to JavaScript compiler for Scala lift
 
 ## About
 
 This plugin is initially based on [play-clojurescript](https://bitbucket.org/jmhofer/play-clojurescript). 
 
-play-clojurescript is a [ClojureScript](https://github.com/clojure/clojurescript) 'compiled asset plugin' for Play 2.3.x
-It is similar to the other built-in compilers. 
 
 This plugin deviates by not requiring the Play chain and compiling main/cljs to JavaScript files.
 
