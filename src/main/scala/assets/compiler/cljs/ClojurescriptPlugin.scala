@@ -2,7 +2,6 @@ package assets.compiler.cljs
 
 import sbt._
 import sbt.Keys._
-import play.Play.AssetsCompiler
 
 object ClojurescriptPlugin extends Plugin {
   val clojureScriptEntryPoints =
@@ -19,7 +18,7 @@ object ClojurescriptPlugin extends Plugin {
   )
 
   override def projectSettings = Seq(
-    clojureScriptEntryPoints <<= (sourceDirectory in Compile){base =>(base / "assets" ** "*.cljs") --- base / "assets" ** "_*"},
+    clojureScriptEntryPoints <<= (sourceDirectory in Compile){base =>(base / "cljs" ** "*.cljs")},
     clojureScriptOptions := Seq.empty[String],
     resourceGenerators in Compile <+= clojureScriptCompiler
   )
